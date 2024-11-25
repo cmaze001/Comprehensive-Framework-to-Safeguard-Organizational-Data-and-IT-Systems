@@ -1,0 +1,142 @@
+### 1. **Access Control and User Permissions**
+
+**Example: Applying the Principle of Least Privilege**
+
+- **Goal:** Limit user access to only necessary resources.
+- **Configuration Example:**
+   - **PowerShell Script to Review Group Memberships:**
+     ```powershell
+     # Review memberships of high-privilege groups
+     Get-ADGroupMember -Identity "Domain Admins" | Select-Object Name, SamAccountName, ObjectClass
+     ```
+
+- **Example of Restricting Access:**
+   - Remove a user from a high-privilege group if they no longer require access:
+     ```powershell
+     Remove-ADGroupMember -Identity "Domain Admins" -Members "JohnDoe" -Confirm:$false
+     ```
+
+- **Role-Based Access Control (RBAC):**
+   - Create and assign users to specific roles in Active Directory:
+     ```powershell
+     New-ADGroup -Name "HR_Department" -GroupScope Global -Path "OU=HR,DC=lab,DC=local"
+     Add-ADGroupMember -Identity "HR_Department" -Members "JaneSmith"
+     ```
+
+---
+
+### 2. **Hardening Systems and Network Security**
+
+**Example: Enforcing Strong Password Policies**
+
+- **Goal:** Enforce strong, complex passwords to prevent unauthorized access.
+- **Configuration Example:**
+   - Set up a password policy that requires at least 12 characters, complexity, and account lockout:
+     ```powershell
+     Set-ADDefaultDomainPasswordPolicy -ComplexityEnabled $true -MinimumPasswordLength 12 -LockoutThreshold 5 -LockoutDuration 15
+     ```
+
+**Example: Disabling SMBv1 (Older and Vulnerable Protocol)**
+
+- **Goal:** Secure file sharing and prevent exploitation of legacy protocols.
+- **Configuration Example:**
+   - Disable SMBv1 on all Windows machines:
+     ```powershell
+     Set-SmbServerConfiguration -EnableSMB1Protocol $false
+     ```
+
+---
+
+### 3. **Audit Logging and Monitoring**
+
+**Example: Enabling Advanced Security Auditing**
+
+- **Goal:** Track and log all user activities, especially on critical systems, to detect malicious behavior.
+- **Configuration Example:**
+   - Enable logging of successful and failed login attempts:
+     ```powershell
+     auditpol /set /subcategory:"Logon/Logoff" /success:enable /failure:enable
+     ```
+
+- **Set up auditing of privilege use:**
+   ```powershell
+   auditpol /set /subcategory:"Special Logon" /success:enable /failure:enable
+   ```
+
+**Example: Syslog Forwarding for Centralized Logging**
+
+- **Goal:** Forward event logs to a centralized log server for easier analysis and long-term retention.
+- **Configuration Example:**
+   - Configure Windows Event Forwarding (WEF) to send logs to a syslog server:
+     ```powershell
+     wecutil qc
+     ```
+
+---
+
+### 4. **Incident Response and Mitigation**
+
+**Example: Disabling an Account After Suspicious Activity**
+
+- **Goal:** Disable compromised user accounts immediately to prevent further damage.
+- **Configuration Example:**
+   - Disable a user account:
+     ```powershell
+     Disable-ADAccount -Identity "CompromisedUser"
+     ```
+
+- **Example: Running a Malware Scan with Windows Defender**
+
+- **Goal:** Automatically scan a machine if suspicious behavior is detected.
+- **Configuration Example:**
+   - Trigger a scan using Windows Defender:
+     ```powershell
+     Start-MpScan -ScanType FullScan
+     ```
+
+---
+
+### 5. **Backup and Data Integrity**
+
+**Example: Automating Backups for Critical Systems**
+
+- **Goal:** Ensure critical data is backed up regularly to prevent loss due to ransomware or other attacks.
+- **Configuration Example:**
+   - Create a scheduled task to back up files regularly:
+     ```powershell
+     $taskAction = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "Backup-Data.ps1"
+     $taskTrigger = New-ScheduledTaskTrigger -Daily -At 3:00AM
+     Register-ScheduledTask -Action $taskAction -Trigger $taskTrigger -TaskName "DataBackup"
+     ```
+
+**Example: Enforcing File Integrity Monitoring**
+
+- **Goal:** Monitor critical files for changes to detect tampering or unauthorized access.
+- **Configuration Example:**
+   - Use System File Checker to verify file integrity:
+     ```powershell
+     sfc /scannow
+     ```
+
+---
+
+### 6. **Network Defense**
+
+**Example: Configuring a Firewall to Restrict Access**
+
+- **Goal:** Prevent unauthorized access to sensitive systems by using a firewall.
+- **Configuration Example:**
+   - Configure the Windows Firewall to block all inbound traffic except on specific ports:
+     ```powershell
+     New-NetFirewallRule -DisplayName "Allow SSH" -Direction Inbound -Protocol TCP -LocalPort 22 -Action Allow
+     New-NetFirewallRule -DisplayName "Block All" -Direction Inbound -Action Block
+     ```
+
+**Example: Network Segmentation for Sensitive Systems**
+
+- **Goal:** Separate sensitive systems from the rest of the network to minimize the attack surface.
+- **Configuration Example:**
+   - Set up VLANs and configure routers/firewalls to restrict traffic between them.
+
+
+
