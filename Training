@@ -1,0 +1,146 @@
+### 1. **Security Awareness Training**
+
+#### **Topic: Phishing Attack Prevention**
+
+**Overview:**
+Phishing is one of the most common attack vectors used by cybercriminals to steal credentials and install malware. This training aims to educate employees on how to identify and avoid phishing attempts.
+
+**Learning Objectives:**
+- Understand what phishing is and how it works.
+- Recognize common signs of phishing emails.
+- Learn how to report phishing attempts to the IT department.
+
+**Training Materials:**
+- **Video:** "What is Phishing?" – A short video that explains phishing, how it works, and the consequences of falling victim to it.
+- **Quiz:** A quiz to test knowledge after completing the training, including questions like:
+   - "Which of the following is a red flag in an email?"
+   - "What should you do if you receive a suspicious email asking for sensitive information?"
+- **Scenario-Based Examples:** A set of real-world examples of phishing emails, with explanations of the tactics used by attackers.
+
+**Best Practices:**
+- Never click on suspicious links or open attachments in unsolicited emails.
+- Always verify the sender’s email address, especially if the email contains a sense of urgency.
+- Use multi-factor authentication (MFA) for email and other critical accounts.
+
+---
+
+### 2. **Password Management Training**
+
+#### **Topic: Strong Passwords and Password Hygiene**
+
+**Overview:**
+This training will teach employees the importance of using strong passwords and following best practices for password management to prevent unauthorized access to systems and data.
+
+**Learning Objectives:**
+- Understand the importance of strong passwords in protecting organizational data.
+- Learn how to create complex and secure passwords.
+- Understand password management tools and how to use them.
+
+**Training Materials:**
+- **Video:** "Creating Strong Passwords" – A video demonstrating the components of a strong password, such as length, complexity, and uniqueness.
+- **Step-by-Step Guide:** A written guide for using password managers to store and organize passwords securely.
+- **Interactive Exercise:** An exercise where employees can evaluate the strength of their passwords using a password strength checker.
+
+**Best Practices:**
+- Use passwords with at least **12 characters**, including a mix of uppercase, lowercase, numbers, and special characters.
+- Never reuse passwords across different accounts.
+- Enable **multi-factor authentication (MFA)** on accounts where possible.
+- Store passwords in a **password manager** instead of writing them down or using simple, easy-to-guess passwords.
+
+---
+
+### 3. **Data Protection and Privacy Training**
+
+#### **Topic: Handling Sensitive Data**
+
+**Overview:**
+This training ensures employees understand the importance of data protection and privacy, and how to handle sensitive data in compliance with organizational policies and legal regulations.
+
+**Learning Objectives:**
+- Understand the different types of sensitive data (e.g., personal, financial, health-related data).
+- Learn the organization’s data protection policies and compliance requirements (e.g., GDPR, HIPAA).
+- Understand how to securely store, transmit, and dispose of sensitive data.
+
+**Training Materials:**
+- **Presentation:** "Data Privacy 101" – A presentation that explains data classification, the types of sensitive data, and the organization’s compliance requirements.
+- **Infographic:** A visual guide on how to handle sensitive data securely (e.g., encrypting files, using secure communication methods).
+- **Case Study:** A scenario where an employee mishandles sensitive data, followed by a discussion on how to avoid such mistakes.
+
+**Best Practices:**
+- Always encrypt sensitive data before transmitting it, especially over email.
+- Avoid storing sensitive data on unencrypted devices or in unsecured locations.
+- When disposing of sensitive data, use secure methods such as shredding physical documents or wiping hard drives.
+- Always follow company protocols for handling Personally Identifiable Information (PII).
+
+---
+
+### 4. **Incident Response and Reporting Training**
+
+#### **Topic: Responding to Security Incidents**
+
+**Overview:**
+Employees must understand how to recognize a security incident, what to do when one occurs, and how to report it to minimize damage and protect organizational assets.
+
+**Learning Objectives:**
+- Recognize signs of a security incident (e.g., unusual system behavior, unauthorized access).
+- Understand the proper steps to take when a security incident is suspected or detected.
+- Learn the process for reporting incidents to the IT/security team.
+
+**Training Materials:**
+- **Checklist:** A step-by-step incident response checklist to guide employees through the process of responding to potential security incidents.
+- **Simulation:** A hands-on simulation where employees respond to a hypothetical phishing attack or malware infection, including steps such as isolating the affected system and reporting the incident.
+- **Flowchart:** A flowchart that outlines the process for reporting security incidents, including escalation procedures and contact information for the IT security team.
+
+**Best Practices:**
+- If you suspect an incident, **immediately disconnect from the network** and report it to the IT department.
+- Do not attempt to fix or investigate the issue on your own unless trained to do so.
+- Use the organization's **incident reporting system** to submit the details of the incident.
+
+---
+
+### 5. **Mobile Device Security Training**
+
+#### **Topic: Securing Mobile Devices**
+
+**Overview:**
+This training educates employees on securing their mobile devices, such as smartphones and tablets, to prevent unauthorized access to organizational data and reduce the risk of loss or theft.
+
+**Learning Objectives:**
+- Understand the risks associated with using mobile devices for work.
+- Learn how to secure mobile devices with strong passwords, encryption, and remote wipe capabilities.
+- Understand the organization's mobile device policy and bring-your-own-device (BYOD) guidelines.
+
+**Training Materials:**
+- **Infographic:** "Mobile Device Security Tips" – A visual guide on securing mobile devices, including enabling screen locks, encryption, and remote wipe features.
+- **Video:** "How to Enable Encryption on Your Mobile Device" – A step-by-step video showing how to enable device encryption on both iOS and Android devices.
+- **BYOD Policy Overview:** A brief guide to the organization’s mobile device policy, including what is permissible and what is prohibited.
+
+**Best Practices:**
+- Enable a **strong password or PIN** on your mobile device, and ensure that it is not shared with others.
+- **Encrypt** your mobile device to protect data in case the device is lost or stolen.
+- Use the **remote wipe** feature to remotely erase the device’s data if it is lost or stolen.
+- Install security updates and patches as soon as they are available.
+
+---
+
+### 6. **Social Engineering Awareness Training**
+
+#### **Topic: Recognizing Social Engineering Attacks**
+
+**Overview:**
+Social engineering attacks manipulate employees into divulging confidential information or performing actions that compromise security. This training aims to help employees recognize these attacks and avoid falling victim to them.
+
+**Learning Objectives:**
+- Understand what social engineering is and the tactics attackers use.
+- Learn how to identify common social engineering attacks (e.g., pretexting, baiting, impersonation).
+- Understand how to respond when targeted by a social engineering attack.
+
+**Training Materials:**
+- **Video:** "Social Engineering 101" – A video demonstrating how attackers use psychological manipulation to trick victims into compromising security.
+- **Interactive Scenario:** An interactive simulation where employees are presented with a social engineering attempt and must decide how to respond.
+- **Knowledge Check:** A short quiz with questions on how to spot a social engineering attack and best practices to follow.
+
+**Best Practices:**
+- Always verify the identity of anyone requesting sensitive information, whether in person, over the phone, or by email.
+- Be cautious when clicking on links or downloading attachments from unknown or unexpected sources.
+- If in doubt, contact the person directly through verified contact methods to confirm the request.
